@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="donas"/>
+        <attribute name="authors" value="marco"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-03-25 08:00:13 p. m."/>
+        <attribute name="created" value="bWFyY287QllST05MRUM7MjAyNS0wMy0yNTswMjo1NjoyOCBwLiBtLjsyNjEw"/>
+        <attribute name="edited" value="bWFyY287QllST05MRUM7MjAyNS0wMy0yNTswODowMDoxMyBwLiBtLjsyOzI3MDg="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;Cantidad de donas&quot;" newline="True"/>
+            <declare name="total" type="Integer" array="False" size=""/>
+            <declare name="cantidad" type="Real" array="False" size=""/>
+            <declare name="precio" type="Real" array="False" size=""/>
+            <input variable="cantidad"/>
+            <if expression="cantidad &gt;29">
+                <then>
+                    <if expression="cantidad &gt;=50">
+                        <then>
+                            <assign variable="precio" expression="10-2"/>
+                        </then>
+                        <else>
+                            <assign variable="precio" expression="10-1"/>
+                        </else>
+                    </if>
+                    <assign variable="total" expression="precio*cantidad"/>
+                </then>
+                <else>
+                    <if expression="cantidad &lt;=30">
+                        <then>
+                            <assign variable="precio" expression="10"/>
+                        </then>
+                        <else>
+                            <assign variable="precio" expression="10"/>
+                        </else>
+                    </if>
+                    <assign variable="total" expression="precio*cantidad"/>
+                </else>
+            </if>
+            <output expression="&quot;El total es:&quot; &amp;total" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

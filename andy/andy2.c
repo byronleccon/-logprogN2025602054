@@ -9,14 +9,10 @@ int main() {
 
    float c1= pow (7, 2);
    float c2= (float)1/5*7 * 3/5*7;
-   float c3= (float) 1/5*7 * 1/5*7;
-   float p= (float)3.1416;
-   float at= c1 + (float)2*c2 +(float) 2*c3 + (float)38/2;
+   float c3= (float) 1/5*7 * 1/5*7; 
+   float at= c1 + (float)2*c2 +(float) 2*c3 + (float)38/2; 
    
-
-   
-  
-    printf("el valor de at es: %f", at);
+   printf("el valor de at es: %f", at);
 
 
 
