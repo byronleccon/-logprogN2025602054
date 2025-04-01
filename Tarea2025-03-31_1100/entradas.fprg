@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="entradas"/>
+        <attribute name="authors" value="marco"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-03-30 11:15:25 p. m."/>
+        <attribute name="created" value="bWFyY287QllST05MRUM7MjAyNS0wMy0zMDsxMDo1MzoxMiBwLiBtLjsyNTk1"/>
+        <attribute name="edited" value="bWFyY287QllST05MRUM7MjAyNS0wMy0zMDsxMToxNToyNSBwLiBtLjsxOzI3MDY="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="edad" type="Integer" array="False" size=""/>
+            <output expression="&quot;Ingrese su edad para conocer el precio de su entrada&quot;" newline="True"/>
+            <input variable="edad"/>
+            <if expression="edad &gt;0 AND edad &lt;=100">
+                <then>
+                    <if expression="edad &gt;18">
+                        <then>
+                            <output expression="&quot;Su entrada tiene el precio de $500&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="edad &gt;=4 AND edad &lt;=18">
+                                <then>
+                                    <output expression="&quot;Su entrada tiene el precio de $200&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <if expression="edad &lt;4">
+                                        <then>
+                                            <output expression="&quot;Pase gratis&quot;" newline="True"/>
+                                        </then>
+                                        <else/>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </then>
+                <else/>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
