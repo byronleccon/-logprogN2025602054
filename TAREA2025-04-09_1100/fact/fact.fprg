@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="fact"/>
+        <attribute name="authors" value="marco"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-07 10:16:20 p. m."/>
+        <attribute name="created" value="bWFyY287QllST05MRUM7MjAyNS0wNC0wNzswOTozNTo1MCBwLiBtLjsyNjEw"/>
+        <attribute name="edited" value="bWFyY287QllST05MRUM7MjAyNS0wNC0wNzswOTo1NzozMyBwLiBtLjs1O21hcmNvO0JZUk9OTEVDOzIwMjUtMDQtMDc7MDU6MzA6MjcgcC4gbS47NTM5MQ=="/>
+        <attribute name="edited" value="bWFyY287QllST05MRUM7MjAyNS0wNC0wNzsxMDoxNjoyMCBwLiBtLjsxOzI3MDY="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="num" type="Integer" array="False" size=""/>
+            <declare name="fact" type="Integer" array="False" size=""/>
+            <output expression="&quot;Ingrese un numero de tipo entero para saber su factorial !&quot;" newline="True"/>
+            <input variable="num"/>
+            <assign variable="fact" expression="num"/>
+            <assign variable="num" expression="num-1"/>
+            <do expression="num &gt;=1">
+                <output expression="&quot;*&quot;&amp;num" newline="True"/>
+                <assign variable="fact" expression="fact*num"/>
+                <assign variable="num" expression="num-1"/>
+            </do>
+            <output expression="&quot;El factorial es:&quot;&amp;fact" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
